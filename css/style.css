@@ -1,0 +1,925 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font: 13px sans-serif;
+}
+
+h1, h2, h3, ul, p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+}
+
+section {
+    min-width: 100%;
+    padding-top: 15px;
+}
+
+.contact-header {
+    background: #102d67;
+    color: #aec9db;
+    padding: 15px;
+}
+
+.contact-header a, .basket a {
+    color: #aec9db;
+    font-size: 15px;
+}
+
+.socialNetwork a {
+    padding: 0 5px;
+}
+
+.contact-header a:hover {
+    color: #fff;
+}
+
+.content {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.email, .timeWork, .socialNetwork {
+    display: inline-block;
+}
+
+.email {
+    padding-right: 30px;
+}
+
+.basket, .btn-action {
+    display: inline-block;
+}
+
+.socialNetwork, .wrapper-basket-btn {
+    float: right;
+}
+
+.btn-action a {
+    color: #fff;
+    padding: 8px 15px;
+    background: #17a2b8;
+}
+
+.btn-action a [class *= 'fa-'] {
+    padding-right: 5px;
+}
+
+.navMenu a:hover, .col-icons a:hover {
+    border-radius: 2px;
+    background: #dbf3fb;
+}
+
+.logo a, .navMenu a {
+    color: #000;
+}
+
+.main-title {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.searchForm {
+    background: url("../images/1.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.searchForm form {
+    background: #102d67;
+    padding: 20px;
+}
+
+#slider-range {
+    margin-top: 10px;
+}
+
+.slider-price {
+    display: inline-block;
+}
+
+#price, #datepicker {
+    padding: 5px;
+    margin: 2px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.btnSearch {
+    background: #bd2130;
+    padding: 8px 65px;
+    color: #fff
+}
+
+input [type="text"] {
+    padding: 5px;
+}
+
+.title-section {
+    text-align: center;
+    padding: 15px 0;
+    line-height: 2.8em;
+}
+
+.col-content {
+    padding: 40px 19px;
+    border: 0.2px solid #9BA7AE;
+    border-top: 0;
+}
+
+.col-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.col-img img {
+    max-width: 100%;
+}
+
+.col-title h3, .price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.col-title h3 {
+    color: #000;
+    padding: 15px 0;
+}
+
+.price, .wrapper-star, .onMap, .col-icons, .col-btn {
+    display: inline-block;
+}
+
+.featured-tours .onMap {
+    padding-left: 7px;
+}
+
+.price {
+    color: #bd2b3c;
+}
+
+.onMap a, .subTitle {
+    color: #17a2b8;
+}
+
+.col-icons a {
+    padding: 5px;
+    color: #9ba7ae;
+}
+
+.col-desc {
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+.featured-tours .btn-action {
+    float: right;
+}
+
+.featured-tours .col-img a, .featured-tours .col-img img {
+    display: block;
+}
+
+.about-us {
+    background: url("../images/5.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.about-us .inner-wrapper {
+    float: right;
+    width: 53%;
+}
+
+.about-us .section.content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.travelService {
+    display: inline-block;
+    width: 49%;
+    padding: 15px 16px;
+    font-size: 36px;
+    color: #17a2b8;
+}
+
+.travelService-title h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.travelService-content p {
+    line-height: 1.5em;
+    font-size: 12px;
+    color: #000;
+}
+
+.destinations-title, .numTours {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.destinations .col {
+    position: relative;
+    padding: 0;
+}
+
+.destinations .img-content {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: rgba(16, 46, 122, 0.5);
+
+}
+
+.destinations .col-img {
+    position: relative;
+}
+
+.destinations img, .destinations a {
+    display: block;
+}
+
+.img-content:hover {
+    background: rgba(0, 0, 0, 0);
+}
+
+.numTours a {
+    color: #fff;
+}
+
+.destinations-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.destinations-icons {
+    position: absolute;
+    top: 80%;
+    right: 10%;
+}
+
+.destinations-icons a {
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.special-offers, .testimonials {
+    background: rgba(228, 221, 222, 0.48);
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+
+.offers-col {
+    position: relative;
+}
+
+.offers-content {
+    background: #fff;
+    border: 0.2px solid #9BA7AE;
+}
+
+.offers-img {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.offers-img img {
+    max-width: 100%;
+    display: block;
+}
+
+.sales, .label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #dc0626;
+    color: #fff;
+    text-align: center;
+    padding: 3px 13px;
+}
+
+.sales p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sales p:first-child {
+    text-decoration: line-through;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.offers-desc p {
+    font-size: 11px;
+    padding: 6px;
+    line-height: 1.8em;
+}
+
+.offers-content .wrapper-star .onMap {
+    padding-left: 0;
+}
+
+.offers-content .btn-action {
+    margin-top: 10px;
+}
+
+.offers-desc .btn-action a {
+    font-size: 12px;
+}
+
+.btn-action a:hover {
+    background: #17a1b9b9;
+}
+
+.tour-types {
+    background: url("../images/5.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.tour-types:before {
+    background-color: rgba(22, 95, 130, 0.95);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.tour-types h1, .tour-types p, .tour-types a {
+    position: relative;
+    color: #ffffff;
+}
+
+.tour-types p, .tour-types a {
+    font-size: 16px;
+}
+
+.types-content {
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.type {
+    text-align: center;
+    background: rgba(172, 179, 193, 0.3);
+}
+
+.type:hover {
+    background: #17a2b8;
+}
+
+.recent-posts .col-img {
+    position: relative;
+}
+
+.label {
+    position: absolute;
+    top: 89%;
+    bottom: -5px;
+}
+
+.posts {
+    position: relative;
+}
+
+.user, .name, .travel-date, .date {
+    display: inline-block;
+    padding-top: 3px;
+    padding-bottom: 10px;
+}
+
+.user, .travel-date {
+    color: #4e555b;
+}
+
+.travel-date {
+    padding-left: 15px;
+}
+
+.testimonials {
+    margin-top: 90px;
+    padding-bottom: 90px;
+}
+
+.testimonial {
+    margin-right: 20px;
+    background: #fff;
+    padding: 22px;
+    position: relative;
+    font-size: 12px;
+    line-height: 1.8em;
+}
+
+.testimonial-wrapper {
+    padding: 35px 0;
+}
+
+.testimonials-container {
+    display: inline-block;
+    width: 47%
+}
+
+.testimonial-title {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.testimonial .wrapper-star {
+    float: right;
+}
+
+.pic {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 60px;
+    display: inline-block;
+}
+
+.pic img {
+    max-width: 100%;
+}
+
+.testimonial-user {
+    display: inline-block;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #fff;
+    margin: 0 0 10px 25px;
+}
+
+.choose {
+    background: #17a2b8;
+    text-align: center;
+    color: #fff;
+}
+
+.choose .btnSearch {
+    margin-left: 40px;
+}
+
+.footer {
+    background: #186095;
+    color: #fff;
+    padding-top: 60px;
+    font-size: 12px;
+}
+
+.footer .footer-wrapper {
+    border-bottom: 1px #aec9db solid;
+    padding-bottom: 60px;
+}
+
+.footer-col {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 5px;
+}
+
+.footer-col .socialNetwork {
+    float: none;
+    padding-top: 35px;
+}
+
+.footer-col .socialNetwork a {
+    color: #fff;
+    padding-right: 10px;
+}
+
+.footer-col span {
+    padding-left: 10px;
+}
+
+.footer-content {
+    padding: 25px 0;
+    line-height: 1.7em;
+    color: #aec9db;
+}
+
+.footer-content a {
+    color: #17a2b8;
+}
+
+.footer-title-content {
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.footer-desc {
+    padding: 15px 0;
+    color: #aec9db;
+}
+
+.tags li {
+    list-style: none;
+    display: inline-block;
+    padding: 3px;
+    margin: 3px;
+    border: 1px #17a2b8 solid;
+}
+
+.tags a {
+    color: #fff;
+}
+
+.footer-content .onMap {
+    padding-left: 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.copyright, .arrow-up, .get-theme {
+    display: inline-block;
+}
+
+.arrow-up a {
+    color: #aec9db;
+    font-size: 16px;
+}
+
+.get-theme {
+    float: right;
+}
+
+.copyright {
+    float: left;
+}
+
+@media (min-width: 320px) {
+    section {
+        margin-bottom: 15px;
+    }
+
+    .contact-header {
+        display: none;
+    }
+
+    .toggle-menu {
+        display: block;
+        float: right;
+        position: absolute;
+        right: 35px;
+        top: 0;
+        text-align: center;
+        width: 28px;
+        margin-top: 14px;
+    }
+
+    .toggle-menu span:before {
+        top: 9px;
+    }
+
+    .toggle-menu span, .toggle-menu span:after, .toggle-menu span:before {
+        width: 100%;
+        height: 2px;
+        background-color: #44c0c2;
+        transition: all 0.3s;
+        backface-visibility: hidden;
+        border-radius: 2px;
+        left: 0;
+    }
+
+    .toggle-menu span:after, .toggle-menu span:before {
+        content: "";
+        position: absolute;
+    }
+
+    .navMenu {
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+
+    .navMenu li {
+        display: block;
+        padding: 3px 0;
+    }
+
+    .menu .content {
+        padding: 10px;
+    }
+
+    .wrapper-basket-btn {
+        display: none;
+    }
+
+    .searchForm {
+        padding-top: 121px;
+        height: 100px;
+        margin-bottom: 178px;
+    }
+
+    .searchForm form {
+        text-align: center;
+    }
+
+    .col {
+        display: block;
+        width: 87%;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    .about-us {
+        display: none;
+    }
+
+    .offers-col {
+        display: block;
+        margin: 0 auto;
+        width: 87%;
+        margin-bottom: 4px;
+    }
+
+    .offers-content {
+        float: none;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .offers-img {
+        float: none;
+        width: 100%;
+    }
+
+    .featured-tours, .about-us, .destinations {
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    .type {
+        display: block;
+        width: 97%;
+        padding: 10px;
+        margin: 2px 10px;
+    }
+
+    .types-content {
+        margin: 10px;
+    }
+
+    .col-content {
+        margin-top: -3px;
+    }
+
+    .testimonials {
+        display: none;
+    }
+
+    .choose {
+        margin-bottom: 0;
+        padding: 15px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .choose .btnSearch {
+        padding: 5px 15px;
+        margin-left: 20px;
+    }
+
+    .footer {
+        padding-top: 30px;
+    }
+
+    .footer-col {
+        display: none;
+    }
+
+    .footer-col:last-child {
+        display: block;
+        width: 87%;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .footer .footer-wrapper, .footer .footer-bottom {
+        padding-bottom: 10px;
+        margin: 0 10px;
+    }
+}
+
+@media (min-width: 481px) {
+    .searchForm {
+        margin-bottom: 134px;
+        padding-top: 159px;
+    }
+
+    .col {
+        display: inline-block;
+        width: 43%;
+        padding: 15px;
+    }
+
+    .featured-tours .btn-action {
+        float: none;
+        padding-top: 15px;
+    }
+
+    .col-desc, .offers-desc, .co {
+        line-height: 1.5em;
+        text-align: left;
+    }
+
+    .featured-tours, .destinations, .special-offers, .recent-posts {
+        text-align: center;
+    }
+
+    .destinations-title, .numTours {
+        text-align: left;
+    }
+
+    .offers-col {
+        display: inline-block;
+        width: 45%;
+        margin: 4px;
+    }
+
+    .travel-date {
+        padding-left: 6px;
+    }
+
+    .choose {
+        text-align: center;
+    }
+
+    .label {
+        top: 85%;
+    }
+}
+
+@media (min-width: 610px) {
+    .searchForm {
+        padding-top: 191px;
+    }
+}
+
+@media (min-width: 768px) {
+    .searchForm {
+        padding-top: 206px;
+        margin-bottom: 103px;
+    }
+
+    .type {
+        display: inline-block;
+        width: 22%;
+        padding: 55px 35px;
+        margin: 55px 10px;
+    }
+
+    .label {
+        top: 90%;
+    }
+}
+
+@media (min-width: 962px) {
+    .contact-header {
+        display: block;
+    }
+
+    .menu {
+        padding: 20px;
+    }
+
+    .navMenu a {
+        padding: 5px;
+    }
+
+    .logo, .navMenu, .wrapper-basket-btn {
+        display: inline-block;
+    }
+
+    .navMenu {
+        width: 68%;
+        text-align: center;
+    }
+
+    .navMenu li {
+        display: inline-block;
+        padding-right: 15px;
+    }
+
+    .toggle-menu {
+        display: none;
+    }
+
+    .basket {
+        padding-right: 53px;
+    }
+
+    .searchForm {
+        padding-top: 360px;
+        margin-bottom: 15px;
+    }
+
+    .searchForm form {
+        margin-top: -35px;
+        padding: 10px;
+    }
+
+    .btnSearch input {
+        background: #bd2130;
+        padding: 10px 70px;
+        color: #fff
+    }
+
+    .featured-tours, .destinations, .special-offers, .recent-posts {
+        text-align: left;
+    }
+
+    .col {
+        display: inline-block;
+        width: 32%;
+        padding: 10px;
+    }
+
+    .featured-tours .btn-action {
+        float: right;
+        padding: 0;
+    }
+
+    .offers-col {
+        display: inline-block;
+        width: 49%;
+        height: 203px;
+    }
+
+    .offers-content {
+        float: left;
+        width: 55%;
+        min-height: 100%;
+    }
+
+    .offers-img {
+        float: left;
+        width: 45%;
+    }
+
+    .featured-tours, .about-us, .destinations {
+        margin: 28px 2px;
+    }
+
+    .type {
+        width: 17%;
+    }
+
+    .testimonials {
+        display: block;
+    }
+
+    .choose {
+        width: 100%;
+        padding: 60px;
+        font-size: 42px;
+    }
+
+    .choose .btnSearch {
+        margin-left: 40px;
+        padding: 8px 65px;
+
+    }
+
+    .footer-col, .footer-col:last-child {
+        display: inline-block;
+        width: 24%;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1310px) {
+    .about-us {
+        display: block;
+        padding-bottom: 422px;
+    }
+}

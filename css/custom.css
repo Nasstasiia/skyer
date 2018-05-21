@@ -1,0 +1,9 @@
+.ui-selectmenu-button.ui-button {
+    padding: 5px;
+    margin: 2px 0;
+    border-radius: 0px;
+}
+
+input[type="submit" i], input[type="text" i] {
+    border-width: 0px;
+}

@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skyer</title>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+            integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.1/jquery.barrating.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.1/themes/fontawesome-stars.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.1/themes/bars-reversed.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<div class="main-wrapper">
+    <header class="header section">
+        <div class="contact-header">
+            <div class="content">
+                <div class="email">
+                    <a href="#"><i class="far fa-envelope"></i> skyer@tours.com</a>
+                </div>
+                <div class="timeWork">
+                    <span><i class="far fa-clock"></i> Mon - Sat 7am-9pm</span>
+                </div>
+                <div class="socialNetwork">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="content">
+                <div class="logo">
+                    <a href="#"><h1 class="main-title">SKYER</h1></a>
+                </div>
+                <nav class="navMenu">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">TOURS</a></li>
+                        <li><a href="#">BOOKING</a></li>
+                        <li><a href="#">FEATURES</a></li>
+                        <li><a href="#">PAGES</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">BLOG</a></li>
+                    </ul>
+                </nav>
+                <div class="toggle-menu"><span></span></div>
+                <div class="wrapper-basket-btn">
+                    <div class="basket">
+                        <a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+                    </div>
+                    <div class="btn-action tel">
+                        <a href="tel:212-355-5326"><i class="fas fa-phone"> </i>212-355-5326</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <section class="searchForm">
+        <div class="content">
+            <form>
+                <select class="select-form">
+                    <option selected="selected">Destination</option>
+                </select>
+                <select class="select-form">
+                    <option selected="selected">Tour Type</option>
+                </select>
+                <input type="text" placeholder="Month" id="datepicker"/>
+                <div class="slider-price">
+                    <input type="text" id="price" placeholder="Maximum Price"/>
+                </div>
+                <input type="submit" class="btnSearch" value="SEARCH"/>
+            </form>
+        </div>
+    </section>
+
+    <section class="featured-tours section">
+        <div class="content">
+            <div class="title-section">
+                <p class="subTitle">FIND YOUR OWN</p>
+                <h1 class="main-title">FEATURED TOURS</h1>
+            </div>
+            <div class="featured-tours col">
+                <div class="col-img">
+                    <a href="#"><img src="images/2.jpg" alt="family-vacation"/></a>
+                </div>
+                <div class="col-content">
+                    <div class="col-title">
+                        <a href="#"><h3>Family Vacation</h3></a>
+                    </div>
+                    <p class="price">$700</p>
+                    <div class="wrapper-star">
+                        <select class="rating">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+                    <div class="onMap">
+                        <a href="#"><i class="fas fa-map-marker-alt"></i>Show on map</a>
+                    </div>
+                    <p class="col-desc">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                        bibendum auctor, nisi elit</p>
+                    <div class="col-icons">
+                        <a href="#"><i class="far fa-clock"></i></a>
+                        <a href="#"><i class="fas fa-plane"></i></a>
+                        <a href="#"><i class="far fa-calendar-alt"></i></a>
+                        <a href="#"><i class="far fa-user"></i></a>
+                    </div>
+                    <div class="btn-action"><a href="#">LEARN MORE</a></div>
+                </div>
+            </div>
+
+            <div class="featured-tours col">
+                <div class="col-img">
+                    <a href="#"><img src="images/3.jpg" alt="Weekends on Island"/></a>
+                </div>
+                <div class="col-content">
+                    <div class="col-title">
+                        <a href="#"><h3>Weekends on Island</h3></a>
+                    </div>
+                    <p class="price">$900</p>
+                    <div class="wrapper-star">
+                        <select class="rating">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="onMap">
+                        <a href="#"><i class="fas fa-map-marker-alt"></i>Show on map</a>
+                    </div>
+                    <p class="col-desc">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                        bibendum auctor, nisi elit</p>
+                    <div class="col-icons">
+                        <a href="#"><i class="far fa-clock"></i></a>
+                        <a href="#"><i class="fas fa-plane"></i></a>
+                        <a href="#"><i class="far fa-calendar-alt"></i></a>
+                        <a href="#"><i class="far fa-user"></i></a>
+                    </div>
+                    <div class="btn-action"><a href="#">LEARN MORE</a></div>
+                </div>
+            </div>
+
+            <div class="featured-tours col">
+                <div class="col-img">
+                    <a href="#"><img src="images/4.jpg" alt="family-vacation"/></a>
+                </div>
+                <div class="col-content">
+                    <div class="col-title">
+                        <a href="#"><h3> Tropic adventure</h3></a>
+                    </div>
+                    <p class="price">$850</p>
+                    <div class="wrapper-star">
+                        <select class="rating">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="onMap">
+                        <a href="#"><i class="fas fa-map-marker-alt"></i>Show on map</a>
+                    </div>
+                    <p class="col-desc">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                        bibendum auctor, nisi elit</p>
+                    <div class="col-icons">
+                        <a href="#"><i class="far fa-clock"></i></a>
+                        <a href="#"><i class="fas fa-plane"></i></a>
+                        <a href="#"><i class="far fa-calendar-alt"></i></a>
+                        <a href="#"><i class="far fa-user"></i></a>
+                    </div>
+                    <div class="btn-action"><a href="#">LEARN MORE</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-us section">
+        <div class="title-section">
+            <p class="subTitle">MAIN ADVANTAGES</p>
+            <h1 class="main-title">WHY CHOOSE US</h1>
+        </div>
+        <div class="content">
+            <div class="inner-wrapper">
+                <div class="travelService">
+                    <i class="fas fa-sun"></i>
+                    <div class="travelService-title">
+                        <h2>Travel Service</h2>
+                    </div>
+                    <div class="travelService-content">
+                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                            nisi
+                            elit</p>
+                    </div>
+                </div>
+                <div class="travelService">
+                    <i class="fas fa-gem"></i>
+                    <div class="travelService-title">
+                        <h2>Tour Perfection</h2>
+                    </div>
+                    <div class="travelService-content">
+                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                            nisi
+                            elit</p>
+                    </div>
+                </div>
+                <div class="travelService">
+                    <i class="fas fa-wine-glass"></i>
+                    <div class="travelService-title">
+                        <h2>All Included From Start</h2>
+                    </div>
+                    <div class="travelService-content">
+                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                            nisi
+                            elit</p>
+                    </div>
+                </div>
+                <div class="travelService">
+                    <i class="fas fa-thumbs-up"></i>
+                    <div class="travelService-title">
+                        <h2>Awesome Support</h2>
+                    </div>
+                    <div class="travelService-content">
+                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                            nisi
+                            elit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="destinations section">
+        <div class="content">
+            <div class="title-section">
+                <p class="subTitle">TOP SELECTION</p>
+                <h1 class="main-title">DESTINATIONS</h1>
+            </div>
+
+            <div class="destinations col">
+                <div class="col-img">
+                    <a href="#"><img src="images/11.jpg" alt="Seoul"/></a>
+                </div>
+                <div class="img-content">
+                    <h2 class="destinations-title">Seoul</h2>
+                    <p class="numTours"><a href="#">11 tours</a></p>
+                    <div class="destinations-icons">
+                        <a href="#"> <i class="far fa-clone"></i></a>
+                        <a href="#"><i class="fas fa-info-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="destinations col">
+                <div class="col-img">
+                    <a href="#"><img src="images/13.jpg" alt="Paris"/></a>
+                </div>
+                <div class="img-content">
+                    <h2 class="destinations-title">Paris</h2>
+                    <p class="numTours"><a href="#">14 tours</a></p>
+                    <div class="destinations-icons">
+                        <a href="#"> <i class="far fa-clone"></i></a>
+                        <a href="#"><i class="fas fa-info-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="destinations col">
+                <div class="col-img">
+                    <a href="#"> <img src="images/12.jpg" alt="Cape Town"/></a>
+                </div>
+                <div class="img-content">
+                    <h2 class="destinations-title">Cape Town</h2>
+                    <p class="numTours"><a href="#">5 tours</a></p>
+                    <div class="destinations-icons">
+                        <a href="#"> <i class="far fa-clone"></i></a>
+                        <a href="#"><i class="fas fa-info-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="special-offers section">
+        <div class="title-section">
+            <p class="subTitle">BEST PROPOSITION</p>
+            <h1 class="main-title">SPECIAL OFFERS</h1>
+        </div>
+        <div class="content">
+            <div class="offers-col">
+                <div class="offers-img">
+                    <img src="images/10.1.jpg" alt="sales">
+                    <div class="sales">
+                        <p>$220</p>
+                        <p>$120</p>
+                    </div>
+                </div>
+
+                <div class="offers-content">
+                    <div class="col-title">
+                        <h3>Water Skiing</h3>
+                    </div>
+                    <div class="onMap">
+                        <a href="#"><i class="fas fa-map-marker-alt"></i>Show on map</a>
+                    </div>
+                    <div class="wrapper-star">
+                        <select class="rating">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="offers-desc">
+                        <p>Proin gravida nibh vel velit auctor quet. Aenean sollicitudin, lorem nibh id elit</p>
+                        <div class="btn-action"><a href="#">BOOK NOW</a></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="offers-col">
+                <div class="offers-img">
+                    <img src="images/9.jpg" alt="sales">
+                    <div class="sales">
+                        <p>$220</p>
+                        <p>$120</p>
+                    </div>
+                </div>
+
+                <div class="offers-content">
+                    <div class="col-title">
+                        <h3>Yoga Culture</h3>
+                    </div>
+
+                    <div class="onMap">
+                        <a href="#"><i class="fas fa-map-marker-alt"></i>Show on map</a>
+                    </div>
+                    <div class="wrapper-star">
+                        <select class="rating">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="offers-desc">
+                        <p>Proin gravida nibh vel velit auctor quet. Aenean sollicitudin, lorem nibh id elit</p>
+                        <div class="btn-action"><a href="#">BOOK NOW</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="offers-col">
+                <div class="offers-img">
+                    <img src="images/10.jpg" alt="sales">
+                    <div class="sales">
+                        <p>$220</p>
+                        <p>$120</p>
+                    </div>
+                </div>
+                <div class="offers-content">
+                    <div class="col-title">
+                        <h3>Summer Activity</h3>
+                    </div>
+                    <div class="onMap">
+                        <a href="#"><i class="fas fa-map-marker-alt"></i>Show on map</a>
+                    </div>
+                    <div class="wrapper-star">
+                        <select class="rating">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="offers-desc">
+                        <p>Proin gravida nibh vel velit auctor quet. Aenean sollicitudin, lorem nibh id elit</p>
+                        <div class="btn-action"><a href="#">BOOK NOW</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="offers-col">
+                <div class="offers-img">
+                    <img src="images/7.1.jpg" alt="sales">
+                    <div class="sales">
+                        <p>$220</p>
+                        <p>$120</p>
+                    </div>
+                </div>
+                <div class="offers-content">
+                    <div class="col-title">
+                        <h3>Tour De France Wine</h3>
+                    </div>
+
+                    <div class="onMap">
+                        <a href="#"><i class="fas fa-map-marker-alt"></i>Show on map</a>
+                    </div>
+                    <div class="wrapper-star">
+                        <select class="rating">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="offers-desc">
+                        <p>Proin gravida nibh vel velit auctor quet. Aenean sollicitudin, lorem nibh id elit</p>
+                        <div class="btn-action"><a href="#">BOOK NOW</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tour-types section">
+        <div class="content">
+            <div class="title-section">
+                <p class="subTitle">BEST FOR YOU</p>
+                <h1 class="main-title">TOUR TYPES</h1>
+            </div>
+            <div class="types-content">
+                <div class="type">
+                    <a href="#">
+                        <i class="fas fa-car"></i>
+                        <p>With car</p>
+                    </a>
+                </div>
+                <div class="type">
+                    <a href="#">
+                        <i class="fas fa-map-signs"></i>
+                        <p>Hiking</p>
+                    </a>
+                </div>
+                <div class="type">
+                    <a href="#">
+                        <i class="fas fa-anchor"></i>
+                        <p>Sea Cruises</p>
+                    </a>
+                </div>
+                <div class="type">
+                    <a href="#">
+                        <i class="far fa-star"></i>
+                        <p>Top Rated</p>
+                    </a>
+                </div>
+                <div class="type">
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                        <p>Insta Tours</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="recent-posts section">
+        <div class="content">
+            <div class="title-section">
+                <p class="subTitle">READ MORE</p>
+                <h1 class="main-title">RECENT MOSTS</h1>
+            </div>
+            <div class="posts col">
+                <div class="col-img">
+                    <a href="#"> <img src="images/6.jpg" alt="Explore featured place"></a>
+                    <div class="label">
+                        <p>UNCATEGORIZED</p>
+                    </div>
+                </div>
+                <div class="col-content">
+                    <div class="col-title">
+                        <h3>Explore Featured Places</h3>
+                    </div>
+                    <div class="user">
+                        <i class="far fa-user"></i>
+                        <p class="name">Anna Leronis</p>
+                    </div>
+                    <div class="travel-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <p class="date">December 06,2017</p>
+                    </div>
+                    <p>Proin gravida nibh vel velit auctor quet. Aenan sollicitudin, lorem nibh id elit...</p>
+                </div>
+            </div>
+            <div class="posts col">
+                <div class="col-img">
+                    <a href="#"> <img src="images/7.jpg" alt="Explore featured place"></a>
+                    <div class="label">
+                        <p>ADVENTURE</p>
+                    </div>
+                </div>
+                <div class="col-content">
+                    <div class="col-title">
+                        <h3>Explore Featured Places</h3>
+                    </div>
+                    <div class="user">
+                        <i class="far fa-user"></i>
+                        <p class="name">Anna Leronis</p>
+                    </div>
+                    <div class="travel-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <p class="date">December 04,2017</p>
+                    </div>
+                    <p>Proin gravida nibh vel velit auctor quet. Aenan sollicitudin, lorem nibh id elit...</p>
+                </div>
+            </div>
+
+            <div class="posts col">
+                <div class="col-img">
+                    <a href="#"> <img src="images/8.jpg" alt="Explore featured place"></a>
+                    <div class="label">
+                        <p>TIPS&TRICKS</p>
+                    </div>
+                </div>
+                <div class="col-content">
+                    <div class="col-title">
+                        <h3>Explore Featured Places</h3>
+                    </div>
+                    <div class="user">
+                        <i class="far fa-user"></i>
+                        <p class="name">Anna Leronis</p>
+                    </div>
+                    <div class="travel-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <p class="date">December 01,2017</p>
+                    </div>
+                    <p>Proin gravida nibh vel velit auctor quet. Aenan sollicitudin, lorem nibh id elit...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials section">
+        <div class="content">
+            <div class="title-section">
+                <p class="subTitle">CUSTOMERS SAY</p>
+                <h1 class="main-title">TESTIMONIALS</h1>
+            </div>
+            <div class="testimonial-wrapper">
+                <div class="testimonials-container">
+                    <div class="testimonial">
+                        <h3 class="testimonial-title">Los Angeles Biking
+                            <div class="wrapper-star">
+                                <select class="rating">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </h3>
+                        <p>Aenean sollicitudin, lorem quis bibendum auctor,
+                            nisi elit consequat ipsum, nec saggits sem nibh id elit. Duis sed odio sit amet
+                            nibh vulputate cursus asit amet mauris. Morbi acumsan ipsum velit. </p>
+                    </div>
+                    <div class="arrow-down"></div>
+                    <div class="testimonial-content">
+                        <a href="#">
+                            <div class="pic">
+                                <img src="images/21.gif">
+                            </div>
+                            <div class="testimonial-user">
+                                <h3>Artur Benedict</h3>
+                                <p>Happy customer</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="testimonials-container">
+                    <div class="testimonial">
+                        <h3 class="testimonial-title">Amazonia Exploring
+                            <div class="wrapper-star">
+                                <select class="rating">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </h3>
+                        <p>Aenean sollicitudin, lorem quis bibendum auctor,
+                            nisi elit consequat ipsum, nec saggits sem nibh id elit. Duis sed odio sit amet
+                            nibh vulputate cursus asit amet mauris. Morbi acumsan ipsum velit. </p>
+                    </div>
+                    <div class="arrow-down"></div>
+                    <div class="testimonial-content">
+                        <a href="#">
+                            <div class="pic">
+                                <img src="images/20.png">
+                            </div>
+                            <div class="testimonial-user">
+                                <h3>Gloria Jeans</h3>
+                                <p>Happy customer</p>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="choose section">
+        <div class="content">
+            <span>Choose Your Adventure</span>
+            <input type="submit" class="btnSearch" value="SEARCH"/>
+        </div>
+    </section>
+    <footer class="footer section">
+        <div class="content">
+            <div class="footer-wrapper">
+                <div class="footer-col">
+                    <h2 class="footer-title">SKYER</h2>
+                    <div class="footer-content">
+                        <p>Proin gravida nibh vel velit auctor aliet senean sollicitudin, lorem quis bibendu auctor elit
+                            consequat ipsum necera.</p>
+                    </div>
+                    <div class="socialNetwork">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Latest Tweets</h3>
+                    <div class="footer-content">
+                        <a href="#"><i class="fab fa-twitter-square"></i><span
+                                class="footer-title-content">@Skyer</span></a>
+                        <p class="footer-desc">The best way to Relax in Puebla, Mexico? Lounging in the hammocks at Casa
+                            Restauro.</p>
+                        <a href="#"><i class="fab fa-twitter-square"></i><span
+                                class="footer-title-content">@Skyer</span></a>
+                        <p class="footer-desc">Like if this has happened to you.</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Tags</h3>
+                    <ul class="footer-content tags">
+                        <li><a href="#">HIKING</a></li>
+                        <li><a href="#">BEST SELLER</a></li>
+                        <li><a href="#">PROMO</a></li>
+                        <li><a href="#">TOP RATED</a></li>
+                        <li><a href="#">ADVENTURE</a></li>
+                        <li><a href="#">NEW</a></li>
+                        <li><a href="#">CITY</a></li>
+                        <li><a href="#">STREET FOOD</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">TIP&TRICKS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact</h3>
+                    <div class="footer-content">
+                        <div class="onMap">
+                            <a href="#"><i class="fas fa-map-marker-alt"></i><span class="footer-desc">Rue de Namur 82, 1000 Brussels, Belgium<span</a>
+                        </div>
+                        <div class="tel-contact">
+                            <a href="tel:212-355-5326"><i class="fas fa-mobile-alt"></i><span class="footer-desc">+1 212-924-1040</span></a>
+                        </div>
+                        <div class="email-contact">
+                            <a href="#"><i class="far fa-envelope"></i><span
+                                    class="footer-desc">skyer@besttours.com</span></a>
+                        </div>
+                        <div class="site-contact">
+                            <a href="#"><i class="fas fa-globe"></i><span class="footer-desc">skyer.com</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <i class="far fa-copyright"></i><span class="footer-desc">Copyright 2018</span>
+                </div>
+                <div class="arrow-up">
+                    <a href="#"><i class="fas fa-arrow-circle-up"></i></a>
+                </div>
+                <div class="get-theme">
+                    <span class="footer-desc">Get the Theme</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+</body>
+</html>
